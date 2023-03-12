@@ -3,15 +3,15 @@ const mongoose = require('mongoose')
 const employeeSchema = new mongoose.Schema({
     firstname: {
         type: String,
-        required: [true, 'Employee first name must be provided']
+        required: [true, 'Employees first name must be provided']
     },
     lastname: {
         type: String,
-        required: [true, 'Employee last name must be provided']
+        required: [true, 'Employees last name must be provided']
     },
     phone_number: {
         type: String,
-        required: [true, 'Employee phone number must be provided']
+        required: [true, 'Employees phone number must be provided']
     },
     email: {
         type: String,
@@ -24,11 +24,11 @@ const employeeSchema = new mongoose.Schema({
     },
     birth_date: {
         type: Date,
-        required: [true, 'Emloyee date of birth must be provided']
+        required: [true, 'Emloyees date of birth must be provided']
     },
     monthly_salary: {
         type: Number,
-        required: [true, `Employee's monthly salary must be provided`]
+        required: [true, `Employees monthly salary must be provided`]
     }
 }, {timestamps: true})
 

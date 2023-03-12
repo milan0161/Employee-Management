@@ -1,0 +1,86 @@
+.add_task_div {
+    margin-top: 3% ;
+}
+.add_task_div h3{
+    text-align: center;
+}
+.add_task_form{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.add_task_form div{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.add_task_form div input,
+.add_task_form div textarea{
+    margin-left: 10px;
+}
+.add_task_form .btn_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.add_task_form .btn_div button{
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: #78813f;
+    color: #f9f9f9; ;
+    border-radius: 2px;
+}
+.add_task_form .btn_div button:hover{
+    border: 1px solid #78813f;
+    background-color: transparent;
+    color: #78813f;
+}
+
+@media (max-width: 1110px){
+    .add_task_form .btn_div button{
+        margin-top: 10px;
+        width: 70px;
+        height: 20px;  
+        font-size: 10px;
+    }
+    .add_task_div{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .add_task_form{
+        gap: 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .add_task_form div{
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        
+        width: 100%;
+    }
+    
+    .add_task_form div label{
+        margin-top: 5px;
+    }
+  
+    
+    .add_task_form input{
+        min-width:100% ;
+        /* display: block; */
+    }
+    .add_task_form textarea{
+        min-width: 100%;
+        
+    };
+   
+   
+    
+    
+}

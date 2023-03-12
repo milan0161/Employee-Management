@@ -1,0 +1,47 @@
+.main_section{
+    width: 100%;
+    height: 100vh;
+}
+
+.main_section .task_div h2{
+    text-align: center;
+    margin: 20px 0;
+}
+.main_section .task_div .title_list{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.main_section .task_div .title_list li{
+    width: 25%;
+    font-weight: bold;
+    
+}
+.main_section .task_div .task_list li p{
+    /* display: inline; */
+    width: 25%;
+   
+}
+.main_section .task_div .task_list{
+    width: 100%;
+    border-bottom: 1px solid black ;
+    display: flex;
+    flex-direction: column;
+
+}
+.main_section .task_div .task_list li{
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 991px){
+    
+}

@@ -1,0 +1,157 @@
+.main_tasks_div{
+    border: 1px solid black;
+    height: 100vh;
+    background-color: #e0e0c2;
+}
+.main_tasks_div h2{
+    margin-top: 5%;
+    text-align: center;
+}
+.main_tasks_div .tasks_list{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.main_tasks_div .tasks_list li{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.main_tasks_div .tasks_list li p,
+.main_tasks_div .tasks_list li div{
+    padding: 2px;
+    width: 20%;
+    border: 1px solid black;
+    height: 60px;
+    
+}
+.main_tasks_div .tasks_list li div span{
+    margin-left: 5px;
+}
+
+.main_tasks_div .page_btn_div{
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_tasks_div .page_btn_div button{
+    width: 70px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main_tasks_div .page_btn_div button:hover{
+    border: 1px solid #f9f9f9;
+}
+.main_tasks_div .page_btn_div span{
+    
+    margin: 0 5px;
+}
+.edit_task_div{
+    margin-top: 3%;
+}
+.edit_task_div h3{
+    
+    text-align: center;
+}
+.edit_form{
+    display: flex;
+    justify-content: space-between;
+
+}
+.edit_form div{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.edit_form div input,
+.edit_form div textarea{
+margin-left: 10%;
+}
+.edit_form .edit_btn_div{
+    
+    display: flex;
+    justify-content: center;
+
+   
+}
+.edit_form .edit_btn_div button{
+   width: 80px;
+   height: 30px;
+   cursor: pointer;
+   border: none;
+   background-color: #306830;
+   color: #f9f9f9; ;
+   border-radius: 2px;
+}
+.edit_form .edit_btn_div button:hover{
+    border: 1px solid #306830;
+    background-color: transparent;
+    color: #306830;
+} 
+
+.add_task_div{
+    margin: 10px auto;
+    background-color: transparent;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.add_task_div button{
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+    font-size: 14px;
+}
+@media (max-width: 1100px){
+    .edit_form .edit_btn_div button{
+        margin-top: 10px;
+        width: 70px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .edit_task_div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+    }
+    .edit_form{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .edit_form div{
+        flex-direction: column;
+        width: 100%;
+    }
+    .edit_form div label{
+        margin: 5px;
+    };
+    .edit_form div input,
+    .edit_form div textarea{
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 991px){
+    .main_tasks_div{
+        font-size: 70%;
+    }
+}
+@media (max-width: 765px){
+    .main_tasks_div{
+        font-size: 50%;
+    }
+}

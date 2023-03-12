@@ -1,0 +1,19 @@
+{
+    "useTabs": false,
+    "tabWidth": 4,
+    "printWidth": 100,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "semi": true,
+    "htmlWhitespaceSensitivity": "strict",
+    "endOfLine": "lf",
+    "jsxBracketSameLine": false,
+    "overrides": [
+        {
+            "files": ["*.json", "*.scss", "*.css", "*.yml"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}

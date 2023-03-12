@@ -1,0 +1,26 @@
+.emp_form {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.emp_form div {
+  width: 80%;
+}
+.emp_form input,
+.emp_form label {
+  width: 100%;
+  display: block;
+}
+.emp_form input {
+  font-size: 15px;
+  padding: 5px;
+}
+.emp_form button {
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+}

@@ -21,7 +21,6 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.use(errorhandler);
 
 
 app.use('/admin', adminRoutes);
@@ -29,8 +28,9 @@ app.use('/employee', employeeRoutes);
 app.use('/task', taskRoutes);
 app.use('/completedTask', completedTaskRoutes)
 
-const port = process.env_PORT || 7000;
+const port = process.env.PORT || 7000;
 
+app.use(errorhandler);
 
 
 const start = async () => {

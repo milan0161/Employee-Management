@@ -11,14 +11,14 @@ export const login = async (data) => {
     try {
         const response = await axiosInstance.post(`${basePath}/signin`, data, { authorization: false });
         if (response.status !== 200) {
-            throw new Error('Wrong Credentials');
+            throw new Error(response.data.message);
 
         } else {
             showSuccess('Welcome to our page');
             return Promise.resolve(response.data)
         }
     } catch (error) {
-        showErrorMessage(error)
+        showErrorMessage(error.response.data.message)
         return Promise.reject(error)
     }
 };

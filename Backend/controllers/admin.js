@@ -1,7 +1,7 @@
 const Admin = require('../models/Admin');
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-
+    .require('dotenv').config()
 const signup = async (req, res, next) => {
     const { username, email, password } = req.body;
     try {
@@ -46,7 +46,7 @@ const login = async (req, res, next) => {
                 username: admin.username,
                 adminId: admin._id.toString()
             },
-            'mhakq00zsyf739hl9ayj16gri9sgsgz',
+            process.env.JWT_SECRET,
             {
                 expiresIn: '1h'
             }
